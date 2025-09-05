@@ -3,8 +3,8 @@
     "filesystem": {
       "command": "C:\\Program Files\\nodejs\\npx.cmd",
       "args": ["-y", "@modelcontextprotocol/server-filesystem",
-       "D:\\Users\\ISX100\\Desktop",
-       "D:\\Users\\ISX100\\Downloads"]
+       "\\Users\\ISX100\\Desktop",
+       "\\Users\\ISX100\\Downloads"]
     },
 
     "desktop-commander": {
