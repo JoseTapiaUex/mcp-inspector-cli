@@ -1,14 +1,65 @@
 {
   "mcpServers": {
     "filesystem": {
-      "command": "C:\Program Files\\nodejs\\npx.cmd",
+      "command": "C:\\Program Files\\nodejs\\npx.cmd",
       "args": ["-y", "@modelcontextprotocol/server-filesystem",
-         "D:\\Users\\ISX100\\Desktop",
-         "D:\\Users\\ISX100\\Downloads"]
+       "D:\\Users\\ISX100\\Desktop",
+       "D:\\Users\\ISX100\\Downloads"]
     },
-    "git": {
+
+    "desktop-commander": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/path/to/repo"]
+      "args": ["@wonderwhy-er/desktop-commander@latest"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "search-images": {
+      "command": "/opt/homebrew/Caskroom/mambaforge/base/bin/uv",
+      "args": [
+        "--directory",
+        "/opt/agents/google-image-search-mcp-python",
+        "run",
+        "main.py"
+      ]
+    },
+    "research-stdio": {
+      "command": "/opt/homebrew/Caskroom/mambaforge/base/bin/uv",
+      "args": [
+        "--directory",
+        "/opt/agents/research-server",
+        "run",
+        "research_server.py"
+      ]
+    },
+    "remote-research-server": {
+      "command": "npx",
+      "args": ["mcp-remote", "http://localhost:8001/sse", "--allow-http"]
+    },
+    "research-scholar": {
+      "command": "/opt/homebrew/Caskroom/mambaforge/base/bin/uv",
+      "args": [
+        "--directory",
+        "/opt/agents/mcp-research-server-s",
+        "run",
+        "research_server_multi.py"
+      ]
+    },
+    "research-scholar-venv": {
+      "command": "/bin/bash",
+      "args": [
+        "-c",
+        "cd /opt/agents/mcp-research-server-s && source .venv/bin/activate && python main.py"
+      ]
+    },
+    "research-scholar-venv-verbose": {
+      "command": "/bin/bash",
+      "args": [
+        "-c",
+        "cd /opt/agents/mcp-research-server-s && source .venv/bin/activate && python main.py --verbose"
+      ]
     }
+
   }
 }
