@@ -8,11 +8,11 @@
     },
 
     "desktop-commander": {
-      "command": "npx",
+      "command": "C:\\Program Files\\nodejs\\npx.cmd",
       "args": ["@wonderwhy-er/desktop-commander@latest"]
     },
     "playwright": {
-      "command": "npx",
+      "command": "C:\\Program Files\\nodejs\\npx.cmd",
       "args": ["@playwright/mcp@latest"]
     },
     "search-images": {
@@ -34,7 +34,7 @@
       ]
     },
     "remote-research-server": {
-      "command": "npx",
+      "command": "C:\\Program Files\\nodejs\\npx.cmd",
       "args": ["mcp-remote", "http://localhost:8001/sse", "--allow-http"]
     },
     "research-scholar": {
